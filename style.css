@@ -1,0 +1,175 @@
+body{
+    font-family: "Poppins";
+   
+}
+.head{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    background-color: rgb(72, 172, 92);
+    height: 80px;
+    align-items: center;
+}
+.name{
+    margin-left: 130px;
+    font-size: 29px;
+    color: #000;
+    font-weight: bold;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+.nav a{
+    margin: 0 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.body{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    /* color: white; */
+    
+}
+
+.photo{
+    width: 30%;
+    height: 300px;
+    /* background: #000; */
+}
+.photo img{
+    width: auto;
+    height: 500px;
+    object-fit: cover;
+    /* background: #000; */
+}
+.about{
+    width: 40%;
+    font-size: 18px;
+}
+.about h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.about h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+.about h3{
+    font-size: 32px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    
+}
+.about hr{
+    width: 60%;
+    border: 2px solid rgb(72, 172, 92);
+    margin-bottom: 20px;
+}   
+span.Robert{
+    color: rgb(72, 172, 92);
+    font-weight: bold;
+}
+.about img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.about button{
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(72, 172, 92);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+}   
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15%;
+    
+}
+.left{
+    width: 50%;
+    height: 100%;
+    font-size: 23px;
+    margin-left: 10%;
+    margin-top: 50px;
+    line-height: 2.9;
+}
+.left ul li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.left ul li img{
+    margin-right: 15px;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    margin-right: 7%;
+}
+.right h2{
+    margin-left: 35%;
+    font-size: 37px;
+    color: rgb(72, 172, 92);
+}
+.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 20px;
+}
+.projects{
+    text-align: center;
+    margin-top: 80px;
+}
+#projectContainer{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.project-card {
+  background-color:rgb(72, 172, 92) ;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  width: 35%;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #0f172a;
+  color: #cbd5f5;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+.footer a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
