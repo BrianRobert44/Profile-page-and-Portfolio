@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="head">
@@ -31,6 +32,15 @@
             <h2>Frontend Developer</h2>
             <!-- <img src="./portfolio.png" alt=""> -->
             <button onclick="downloadResume()">Resume</button>
+            <button onclick="window.location.href='#Projects'" class="secondary">View Projects</button>
+
+            <p class="tagline">I build clean, responsive, user-friendly web interfaces.</p>
+        </div>
+        <div class="icons">
+            <i class="fa-brands fa-html5"></i><br>
+            <i class="fa-brands fa-css3-alt"></i><br>
+            <i class="fa-brands fa-js"></i><br>
+            <i class="fa-brands fa-react"></i>
         </div>
     </div>
     <section id="About">
@@ -77,15 +87,30 @@
     </div>
 </section>
     <section id="contact">
-    <footer class="footer">
-    <p>&copy; 2024 Robert's Portfolio. All rights reserved.</p>
+        <footer class="footer">
+            <p>&copy; 2024 Robert's Portfolio. All rights reserved.</p>
 
-  <div class="social">
-    <a href="https://github.com" target="_blank">GitHub</a>
-    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-    <a href="mailto:robert442004@gmail.com">Email</a>
-  </div>
-</footer>
+            <div class="social">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <i class="fa-brands fa-github"></i>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="mailto:robert442004@gmail.com">Email</a>
+                <i class="fa-solid fa-envelope"></i>
+             </div>
+             <div class="form">
+                <h2>Contact Me</h2>
+
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+
+            </div>
+        </footer>
     </section>
 <script src="script.js"></script>
 </body>

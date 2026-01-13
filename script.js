@@ -35,3 +35,37 @@ function downloadResume() {
   document.body.removeChild(link);
 }
 
+document.getElementById("contactForm").addEventListener("submit", async function (e) {
+    alert("Submitting form...");
+    e.preventDefault();
+
+    const data = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+    };
+
+    try {
+        console.log("fetching");
+        
+        const res = await fetch("http://127.0.0.1:8000/api/contact/", {
+            method: "POST",
+            headers: { 
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        });
+
+        const result = await res.json();
+
+        if (res.ok) {
+            alert(result.message || "Message sent successfully!");
+            this.reset();
+        } else {
+            alert(result.message || "Error sending message");
+        }
+    } catch (err) {
+        alert("Server not reachable");
+        console.error(err);
+    }
+});
