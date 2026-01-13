@@ -44,3 +44,6 @@ def contact_api(request):
         "status": "error",
         "message": "Only POST allowed"
     }, status=405)
+
+def root(request):
+    return JsonResponse({"message": "Portfolio API running"})
