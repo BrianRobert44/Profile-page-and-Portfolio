@@ -2,7 +2,6 @@ from email import message
 import email
 from unicodedata import name
 from django.shortcuts import render
-# Create your views here.
 import json
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -45,6 +44,3 @@ def contact_api(request):
         "status": "error",
         "message": "Only POST allowed"
     }, status=405)
-
-def root(request):
-    return JsonResponse({"message": "Portfolio API running"})

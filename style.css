@@ -140,19 +140,19 @@ body{
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.icons i.fa-html5:hover {
+.icons i.fa-html5{
     color: #e34f26;
 }
 
-.icons i.fa-css3-alt:hover {
+.icons i.fa-css3-alt {
     color: #1572b6;
 }
 
-.icons i.fa-js:hover {
+.icons i.fa-js {
     color: #f7df1e;
 }
 
-.icons i.fa-react:hover {
+.icons i.fa-react {
     color: #61dafb;
 }
 
@@ -275,6 +275,60 @@ body{
     font-size: 1rem;
     opacity: 0.85;
     letter-spacing: 0.5px;
+}
+.section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Timeline styling */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  background: #fff;
+  padding: 20px 25px;
+  border-left: 4px solid #0f172a;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.timeline-item h3 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.timeline-item span {
+  display: block;
+  font-size: 0.85rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.timeline-item p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0;
 }
 
 .projects{

@@ -46,7 +46,6 @@ document.getElementById("contactForm").addEventListener("submit", async function
     };
 
     try {
-        console.log("fetching");
         
         const res = await fetch("http://127.0.0.1:8000/api/contact/", {
             method: "POST",
